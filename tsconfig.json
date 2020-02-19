@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tk-ng/ui/material": ["libs/ui/material/src/index.ts"]
+      "@tk-ng/ui/material": ["libs/ui/material/src/index.ts"],
+      "@tk-ng/shared/utils/logger": ["libs/shared/utils/logger/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
