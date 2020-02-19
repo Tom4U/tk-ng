@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "esbenp.prettier-vscode",
+    "nrwl.angular-console",
+    "angular.ng-template",
+    "Mikael.Angular-BeastCode",
+    "alexiv.vscode-angular2-files",
+    "eamodio.gitlens",
+    "maptz.regionfolder",
+    "plinionaves.angular-extension-pack",
+    "cyrilletuzi.angular-schematics",
+    "johnpapa.angular2",
+    "vismalietuva.vscode-angular-support",
+    "jarek-toro.angular-i18n",
+    "natewallace.angular2-inline",
+    "infinity1207.angular2-switcher",
+    "angulardoc.angulardoc-vscode",
+    "msjsdiag.debugger-for-chrome",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "zignd.html-css-class-completion",
+    "bierner.markdown-preview-github-styles",
+    "davidanson.vscode-markdownlint",
+    "pkief.material-icon-theme",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "mrmlnc.vscode-scss",
+    "rbbit.typescript-hero",
+    "pflannery.vscode-versionlens",
+    "ghaschel.vscode-angular-html"
+  ]
+}

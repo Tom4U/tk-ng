@@ -1,0 +1,19 @@
+{
+  "search.exclude": {
+    "**/ChromiumDevProfile": true,
+    "**/dist": true,
+    "**/vendors": true
+  },
+  "files.watcherExclude": {
+   "**/vendors/**": true
+  },
+  "javascript.referencesCodeLens.enabled": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "editor.tabCompletion": "on",
+  "emmet.showSuggestionsAsSnippets": true,
+  "files.exclude": {
+    "**/ChromiumDevProfile": true,
+    "**/dist": true
+  },
+  "tslint.exclude": ["**/node_modules/**", "**/.storybook/**"]
+}

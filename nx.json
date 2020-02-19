@@ -1,0 +1,22 @@
+{
+  "npmScope": "tk-ng",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "tk-ng-demo": {
+      "tags": []
+    },
+    "tk-ng-demo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["tk-ng-demo"]
+    }
+  }
+}
