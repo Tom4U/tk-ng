@@ -17,6 +17,9 @@
     "tk-ng-demo-e2e": {
       "tags": [],
       "implicitDependencies": ["tk-ng-demo"]
+    },
+    "ui-material": {
+      "tags": []
     }
   }
 }
