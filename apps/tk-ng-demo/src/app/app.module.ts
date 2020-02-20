@@ -1,8 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { ConsoleLogger, Logger } from '@tk-ng/shared/utils';
+
+import { environment } from '../environments/environment';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -10,7 +12,12 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabled' })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: Logger,
+      useValue: new ConsoleLogger(environment.logLevel)
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
