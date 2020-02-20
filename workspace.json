@@ -25,9 +25,7 @@
               "apps/tk-ng-demo/src/favicon.ico",
               "apps/tk-ng-demo/src/assets"
             ],
-            "styles": [
-              "apps/tk-ng-demo/src/styles.scss"
-            ],
+            "styles": ["apps/tk-ng-demo/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -85,10 +83,7 @@
               "apps/tk-ng-demo/tsconfig.app.json",
               "apps/tk-ng-demo/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/tk-ng-demo/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/tk-ng-demo/**"]
           }
         },
         "test": {
@@ -123,13 +118,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/tk-ng-demo-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/tk-ng-demo-e2e/**"
-            ]
+            "tsConfig": ["apps/tk-ng-demo-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/tk-ng-demo-e2e/**"]
           }
         }
       }
@@ -147,10 +137,7 @@
               "libs/ui/material/tsconfig.lib.json",
               "libs/ui/material/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/ui/material/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/ui/material/**"]
           }
         },
         "test": {
@@ -220,14 +207,73 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/ui-material-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/ui-material-e2e/**"
-            ]
+            "tsConfig": ["apps/ui-material-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/ui-material-e2e/**"]
           }
+        }
+      }
+    },
+    "shared-utils-logger": {
+      "projectType": "library",
+      "root": "libs/shared/utils/logger",
+      "sourceRoot": "libs/shared/utils/logger/src",
+      "prefix": "tk-ng",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/utils/logger/tsconfig.lib.json",
+              "libs/shared/utils/logger/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/utils/logger/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/utils/logger/jest.config.js",
+            "tsConfig": "libs/shared/utils/logger/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/utils/logger/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "shared-contracts": {
+      "projectType": "library",
+      "root": "libs/shared/contracts",
+      "sourceRoot": "libs/shared/contracts/src",
+      "prefix": "tk-ng",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/contracts/tsconfig.lib.json",
+              "libs/shared/contracts/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/contracts/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/contracts/jest.config.js",
+            "tsConfig": "libs/shared/contracts/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/contracts/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
         }
       }
     }

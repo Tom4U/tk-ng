@@ -5,7 +5,7 @@
     "**/vendors": true
   },
   "files.watcherExclude": {
-   "**/vendors/**": true
+    "**/vendors/**": true
   },
   "javascript.referencesCodeLens.enabled": true,
   "npm-intellisense.scanDevDependencies": true,
@@ -15,5 +15,42 @@
     "**/ChromiumDevProfile": true,
     "**/dist": true
   },
-  "tslint.exclude": ["**/node_modules/**", "**/.storybook/**"]
+  "tslint.exclude": ["**/node_modules/**", "**/.storybook/**"],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "files.insertFinalNewline": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.colorDecorators": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "tslint.autoFixOnSave": true,
+  "tslint.run": "onSave",
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescriptHero.imports.grouping": [
+    "Plains",
+    "Modules",
+    "Workspace",
+    "Remaining"
+  ],
+  "typescriptHero.imports.organizeOnSave": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.autoReveal": false
 }
