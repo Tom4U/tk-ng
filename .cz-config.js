@@ -40,6 +40,7 @@ module.exports = {
     { name: 'menus' },
     { name: 'dialogs' },
     { name: 'uploader' },
+    { name: 'tk-ng-demo' },
     { name: 'build' },
     { name: 'packaging' },
     { name: 'release' },
