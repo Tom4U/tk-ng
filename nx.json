@@ -16,14 +16,18 @@
     },
     "tk-ng-demo-e2e": {
       "tags": [],
-      "implicitDependencies": ["tk-ng-demo"]
+      "implicitDependencies": [
+        "tk-ng-demo"
+      ]
     },
     "ui-material": {
       "tags": []
     },
     "ui-material-e2e": {
       "tags": [],
-      "implicitDependencies": ["ui-material"]
+      "implicitDependencies": [
+        "ui-material"
+      ]
     },
     "shared-utils-logger": {
       "tags": []
@@ -33,6 +37,12 @@
     },
     "ui-common": {
       "tags": []
+    },
+    "ui-common-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "ui-common"
+      ]
     }
   }
 }
