@@ -1,10 +1,11 @@
+import { EnvironmentConfig } from '@tk-ng/shared/contracts';
 import { LogLevel } from '@tk-ng/shared/utils';
 
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+export const environment: EnvironmentConfig = {
   production: false,
   logLevel: LogLevel.DEBUG
 };
