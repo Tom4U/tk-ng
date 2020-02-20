@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "start:app",
+      "url": "http://localhost:4200",
+      "sourceMapPathOverrides": {
+        "webRoot": "${workspaceRoot}",
+        "webpack:/*": "${workspaceRoot}/*"
+      },
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "/usr/bin/chromium-browser",
+      "runtimeArgs": [
+        "--new-window",
+        "--user-data-dir=${workspaceFolder}/ChromiumDevProfile",
+        "--remote-debugging-port=9222",
+        "--disable-background-networking"
+      ],
+      "preLaunchTask": "start:app",
+      "smartStep": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "npmScope": "tk-ng",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "tk-ng-demo": {
+      "tags": []
+    },
+    "tk-ng-demo-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "tk-ng-demo"
+      ]
+    },
+    "ui-material": {
+      "tags": []
+    },
+    "ui-material-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "ui-material"
+      ]
+    },
+    "shared-utils-logger": {
+      "tags": []
+    },
+    "shared-contracts": {
+      "tags": []
+    },
+    "ui-common": {
+      "tags": []
+    },
+    "ui-common-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "ui-common"
+      ]
+    }
+  }
+}
