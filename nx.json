@@ -30,6 +30,9 @@
     },
     "shared-contracts": {
       "tags": []
+    },
+    "ui-common": {
+      "tags": []
     }
   }
 }

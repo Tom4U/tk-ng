@@ -276,6 +276,38 @@
           "styleext": "scss"
         }
       }
+    },
+    "ui-common": {
+      "projectType": "library",
+      "root": "libs/ui/common",
+      "sourceRoot": "libs/ui/common/src",
+      "prefix": "tk-ng",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui/common/tsconfig.lib.json",
+              "libs/ui/common/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui/common/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/common/jest.config.js",
+            "tsConfig": "libs/ui/common/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/common/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
